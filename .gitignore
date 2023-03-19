@@ -1,0 +1,3 @@
+*.ipynb
+account.py
+__pycache__
