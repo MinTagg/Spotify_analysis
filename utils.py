@@ -10,3 +10,9 @@ def change_to_korea_time(input_time):
     input_time = datetime.fromisoformat(input_time)
     return input_time + time_difference
 
+def get_genre(artist_id, sp):
+    result = sp.artist(artist_id)
+    genres = result['genres']
+    if genres == []:
+        genres = ['Various']
+    return genres
